@@ -68,8 +68,10 @@ public class SimpleClientServerChatActivity extends Activity {
 					System.out.println("Server has not bean started on port 4444.");
 				}
 			} catch (UnknownHostException e) {
+				System.out.println("Faild to connect server " + CHAT_SERVER_IP);
 				e.printStackTrace();
 			} catch (IOException e) {
+				System.out.println("Faild to connect server " + CHAT_SERVER_IP);
 				e.printStackTrace();
 			}
 			return null;
